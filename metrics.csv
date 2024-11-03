@@ -1,0 +1,14 @@
+TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" metric.label."result"="success".60s.pool_id:github-actions-pool.project_id:teak-store-433922-k0
+pool_id,github-actions-pool
+project_id,teak-store-433922-k0
+Sun Nov 03 2024 17:17:00 GMT-0500 (Eastern Standard Time),0.0622232592765435
+Sun Nov 03 2024 17:21:00 GMT-0500 (Eastern Standard Time),0.0011108518475307916
+Sun Nov 03 2024 17:22:00 GMT-0500 (Eastern Standard Time),0.01888837036172825
+Sun Nov 03 2024 17:23:00 GMT-0500 (Eastern Standard Time),0.04666744445740763
+Sun Nov 03 2024 17:27:00 GMT-0500 (Eastern Standard Time),0.004443407390123166
+Sun Nov 03 2024 17:28:00 GMT-0500 (Eastern Standard Time),0.0622232592765435
+Sun Nov 03 2024 17:33:00 GMT-0500 (Eastern Standard Time),0.004443407390123166
+Sun Nov 03 2024 17:34:00 GMT-0500 (Eastern Standard Time),0.0622232592765435
+Sun Nov 03 2024 18:16:00 GMT-0500 (Eastern Standard Time),0.0011108518475307916
+Sun Nov 03 2024 18:17:00 GMT-0500 (Eastern Standard Time),0.01888837036172825
+Sun Nov 03 2024 18:18:00 GMT-0500 (Eastern Standard Time),0.04666744445740763
