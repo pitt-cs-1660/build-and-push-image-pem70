@@ -1,5 +1,6 @@
 TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" metric.label."result"="success" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" .pool_id:github-actions-pool.project_id:teak-store-433922-k0
 pool_id,github-actions-pool
 project_id,teak-store-433922-k0
-Sun Nov 03 2024 00:35:00 GMT-0400 (Eastern Daylight Time),0.0033333333333333335
-Sun Nov 03 2024 00:40:00 GMT-0400 (Eastern Daylight Time),0.0033333333333333335
+Sun Nov 03 2024 17:20:00 GMT-0500 (Eastern Standard Time),0.013333333333333334
+Sun Nov 03 2024 17:25:00 GMT-0500 (Eastern Standard Time),0.013333333333333334
+Sun Nov 03 2024 17:30:00 GMT-0500 (Eastern Standard Time),0.013333333333333334

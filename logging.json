@@ -1,135 +1,50 @@
 {
-    "protoPayload": {
-      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
-      "status": {},
-      "authenticationInfo": {
-        "principalEmail": "dex1032m@gmail.com",
-        "principalSubject": "user:dex1032m@gmail.com"
-      },
-      "requestMetadata": {
-        "callerIp": "104.196.124.13",
-        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.projects.add-iam-policy-binding invocation-id/211b60c7e5634d019569c9de9bf2a5ea environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
-        "requestAttributes": {},
-        "destinationAttributes": {}
-      },
-      "serviceName": "cloudresourcemanager.googleapis.com",
-      "methodName": "SetIamPolicy",
-      "authorizationInfo": [
-        {
-          "resource": "projects/teak-store-433922-k0",
-          "permission": "resourcemanager.projects.setIamPolicy",
-          "granted": true,
-          "resourceAttributes": {
-            "service": "cloudresourcemanager.googleapis.com",
-            "name": "projects/teak-store-433922-k0",
-            "type": "cloudresourcemanager.googleapis.com/Project"
-          },
-          "permissionType": "ADMIN_WRITE"
-        },
-        {
-          "resource": "projects/teak-store-433922-k0",
-          "permission": "resourcemanager.projects.setIamPolicy",
-          "granted": true,
-          "resourceAttributes": {
-            "service": "cloudresourcemanager.googleapis.com",
-            "name": "projects/teak-store-433922-k0",
-            "type": "cloudresourcemanager.googleapis.com/Project"
-          },
-          "permissionType": "ADMIN_WRITE"
-        }
-      ],
-      "resourceName": "projects/teak-store-433922-k0",
-      "serviceData": {
-        "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
-        "policyDelta": {}
-      },
-      "request": {
-        "policy": {
-          "bindings": [
-            {
-              "members": [
-                "serviceAccount:service-744564545457@gcp-sa-artifactregistry.iam.gserviceaccount.com"
-              ],
-              "role": "roles/artifactregistry.serviceAgent"
-            },
-            {
-              "members": [
-                "serviceAccount:github-actions@teak-store-433922-k0.iam.gserviceaccount.com"
-              ],
-              "role": "roles/artifactregistry.writer"
-            },
-            {
-              "role": "roles/compute.serviceAgent",
-              "members": [
-                "serviceAccount:service-744564545457@compute-system.iam.gserviceaccount.com"
-              ]
-            },
-            {
-              "role": "roles/editor",
-              "members": [
-                "serviceAccount:744564545457-compute@developer.gserviceaccount.com",
-                "serviceAccount:744564545457@cloudservices.gserviceaccount.com"
-              ]
-            },
-            {
-              "members": [
-                "user:dex1032m@gmail.com"
-              ],
-              "role": "roles/owner"
-            }
-          ],
-          "etag": "BwYl+lRU7RY="
-        },
-        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
-        "resource": "teak-store-433922-k0"
-      },
-      "response": {
-        "@type": "type.googleapis.com/google.iam.v1.Policy",
-        "etag": "BwYl+tfADCY=",
-        "bindings": [
-          {
-            "role": "roles/artifactregistry.serviceAgent",
-            "members": [
-              "serviceAccount:service-744564545457@gcp-sa-artifactregistry.iam.gserviceaccount.com"
-            ]
-          },
-          {
-            "role": "roles/artifactregistry.writer",
-            "members": [
-              "serviceAccount:github-actions@teak-store-433922-k0.iam.gserviceaccount.com"
-            ]
-          },
-          {
-            "members": [
-              "serviceAccount:service-744564545457@compute-system.iam.gserviceaccount.com"
-            ],
-            "role": "roles/compute.serviceAgent"
-          },
-          {
-            "members": [
-              "serviceAccount:744564545457-compute@developer.gserviceaccount.com",
-              "serviceAccount:744564545457@cloudservices.gserviceaccount.com"
-            ],
-            "role": "roles/editor"
-          },
-          {
-            "role": "roles/owner",
-            "members": [
-              "user:dex1032m@gmail.com"
-            ]
-          }
-        ]
-      }
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "dex1032m@gmail.com",
+      "principalSubject": "user:dex1032m@gmail.com"
     },
-    "insertId": "p0o3jxe49lyi",
-    "resource": {
-      "type": "project",
-      "labels": {
-        "project_id": "teak-store-433922-k0"
-      }
+    "requestMetadata": {
+      "callerIp": "35.196.203.11",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/bf6bf4a641084d4e9c7c814a58bf2c13 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2024-11-03T22:26:23.361499127Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
     },
-    "timestamp": "2024-11-03T04:45:51.133191Z",
-    "severity": "NOTICE",
-    "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
-    "receiveTimestamp": "2024-11-03T04:45:52.048211274Z"
-  }
+    "serviceName": "artifactregistry.googleapis.com",
+    "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+    "authorizationInfo": [
+      {
+        "resource": "projects/teak-store-433922-k0/locations/us-east5/repositories/cs-1660",
+        "permission": "artifactregistry.repositories.setIamPolicy",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/teak-store-433922-k0/locations/us-east5/repositories/cs-1660",
+    "request": {
+      "resource": "projects/teak-store-433922-k0/locations/us-east5/repositories/cs-1660",
+      "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+    },
+    "response": {
+      "@type": "type.googleapis.com/google.iam.v1.Policy"
+    }
+  },
+  "insertId": "utnkawd3na0",
+  "resource": {
+    "type": "audited_resource",
+    "labels": {
+      "service": "artifactregistry.googleapis.com",
+      "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "project_id": "teak-store-433922-k0"
+    }
+  },
+  "timestamp": "2024-11-03T22:26:23.352764598Z",
+  "severity": "NOTICE",
+  "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
+  "receiveTimestamp": "2024-11-03T22:26:23.872192722Z"
+}
