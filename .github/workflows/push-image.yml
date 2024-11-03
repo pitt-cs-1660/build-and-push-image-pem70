@@ -21,7 +21,7 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           workload_identity_provider: "projects/744564545457/locations/global/workloadIdentityPools/github-actions-pool/providers/github-provider"
-          service_account: "github-actions-sa@teak-store-433922-k0.iam.gserviceaccount.com"
+          service_account: "github-actions@teak-store-433922-k0.iam.gserviceaccount.com"
 
       - name: Configure Docker for Google Artifact Registry
         run: |
@@ -29,8 +29,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t $us-east5-docker.pkg.dev/teak-store-433922-k0/cs-1660/image:latest .
+          docker build -t us-east5-docker.pkg.dev/teak-store-433922-k0/cs-1660/image:latest .
 
       - name: Push Docker image to Google Artifact Registry
         run: |
-          docker push ${GCP_ARTIFACT_REGISTRY_REGION}-docker.pkg.dev/teak-store-433922-k0/cs-1660/image:latest
+          docker push us-east5-docker.pkg.dev/teak-store-433922-k0/cs-1660/image:latest
