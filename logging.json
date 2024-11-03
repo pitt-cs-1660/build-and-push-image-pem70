@@ -1,3 +1,203 @@
+[{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "dex1032m@gmail.com",
+      "principalSubject": "user:dex1032m@gmail.com"
+    },
+    "requestMetadata": {
+      "callerIp": "2601:547:f00:8ff0:7c1c:aa2b:5b5:bc62",
+      "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2024-11-03T02:44:16.820814104Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
+    },
+    "serviceName": "artifactregistry.googleapis.com",
+    "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+    "authorizationInfo": [
+      {
+        "resource": "projects/teak-store-433922-k0/locations/us-east5",
+        "permission": "artifactregistry.repositories.create",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/teak-store-433922-k0/locations/us-east5",
+    "request": {
+      "repository": {
+        "dockerConfig": {
+          "immutableTags": false
+        },
+        "format": "DOCKER",
+        "cleanupPolicyDryRun": true
+      },
+      "parent": "projects/teak-store-433922-k0/locations/us-east5",
+      "repositoryId": "cs-1660",
+      "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.CreateRepositoryRequest"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-east5"
+      ]
+    }
+  },
+  "insertId": "6fraced3bc9",
+  "resource": {
+    "type": "audited_resource",
+    "labels": {
+      "project_id": "teak-store-433922-k0",
+      "service": "artifactregistry.googleapis.com",
+      "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository"
+    }
+  },
+  "timestamp": "2024-11-03T02:44:16.812838804Z",
+  "severity": "NOTICE",
+  "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "projects/teak-store-433922-k0/locations/us-east5/operations/0323914d-a947-472c-b55f-79771cd24d01",
+    "producer": "artifactregistry.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2024-11-03T02:44:17.279853398Z"
+},
+
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "dex1032m@gmail.com",
+      "principalSubject": "user:dex1032m@gmail.com"
+    },
+    "requestMetadata": {
+      "callerIp": "104.196.124.13",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/6af4968e44554b009423eddf56f9d090 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2024-11-03T03:06:29.159277221Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
+    },
+    "serviceName": "iam.googleapis.com",
+    "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+    "authorizationInfo": [
+      {
+        "resource": "projects/teak-store-433922-k0/locations/global",
+        "permission": "iam.workloadIdentityPools.create",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/teak-store-433922-k0/locations/global",
+    "request": {
+      "workloadIdentityPool": {
+        "displayName": "GitHub Actions Pool",
+        "disabled": false
+      },
+      "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+      "workloadIdentityPoolId": "github-actions-pool",
+      "parent": "projects/teak-store-433922-k0/locations/global"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "global"
+      ]
+    }
+  },
+  "insertId": "1y90j3pdiilr",
+  "resource": {
+    "type": "audited_resource",
+    "labels": {
+      "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "project_id": "teak-store-433922-k0",
+      "service": "iam.googleapis.com"
+    }
+  },
+  "timestamp": "2024-11-03T03:06:29.149100752Z",
+  "severity": "NOTICE",
+  "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "projects/744564545457/locations/global/workloadIdentityPools/github-actions-pool/operations/bigarnorto4qmeea2o5jkaq000000000",
+    "producer": "iam.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2024-11-03T03:06:29.849348480Z"
+},
+
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "dex1032m@gmail.com",
+      "principalSubject": "user:dex1032m@gmail.com"
+    },
+    "requestMetadata": {
+      "callerIp": "104.196.124.13",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/95bbd766a60a44ce90e4f2ac7c2e33d1 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2024-11-03T04:30:20.135880317Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
+    },
+    "serviceName": "iam.googleapis.com",
+    "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+    "authorizationInfo": [
+      {
+        "resource": "projects/teak-store-433922-k0/locations/global/workloadIdentityPools/github-actions-pool",
+        "permission": "iam.workloadIdentityPoolProviders.create",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/teak-store-433922-k0/locations/global/workloadIdentityPools/github-actions-pool",
+    "request": {
+      "workloadIdentityPoolProviderId": "github-provider-2",
+      "workloadIdentityPoolProvider": {
+        "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+        "attributeMapping": {
+          "google.subject": "assertion.sub",
+          "attribute.repository": "assertion.repository"
+        },
+        "oidc": {
+          "issuerUri": "https://token.actions.githubusercontent.com"
+        },
+        "disabled": false,
+        "displayName": "GitHub Provider"
+      },
+      "parent": "projects/teak-store-433922-k0/locations/global/workloadIdentityPools/github-actions-pool",
+      "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "global"
+      ]
+    }
+  },
+  "insertId": "s1nzdldfska",
+  "resource": {
+    "type": "audited_resource",
+    "labels": {
+      "service": "iam.googleapis.com",
+      "project_id": "teak-store-433922-k0",
+      "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+    }
+  },
+  "timestamp": "2024-11-03T04:30:20.118650546Z",
+  "severity": "NOTICE",
+  "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "projects/744564545457/locations/global/workloadIdentityPools/github-actions-pool/providers/github-provider-2/operations/bigarxhyto4qmegiqozjaaq000000000",
+    "producer": "iam.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2024-11-03T04:30:21.381549282Z"
+},
+
 {
   "protoPayload": {
     "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
@@ -38,13 +238,16 @@
   "resource": {
     "type": "audited_resource",
     "labels": {
+      "project_id": "teak-store-433922-k0",
       "service": "artifactregistry.googleapis.com",
-      "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
-      "project_id": "teak-store-433922-k0"
+      "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
     }
   },
   "timestamp": "2024-11-03T22:26:23.352764598Z",
   "severity": "NOTICE",
   "logName": "projects/teak-store-433922-k0/logs/cloudaudit.googleapis.com%2Factivity",
   "receiveTimestamp": "2024-11-03T22:26:23.872192722Z"
-}
+}]
+
+
+
